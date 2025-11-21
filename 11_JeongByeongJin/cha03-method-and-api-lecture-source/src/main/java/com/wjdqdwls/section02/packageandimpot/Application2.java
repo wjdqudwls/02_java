@@ -3,8 +3,8 @@ package com.wjdqdwls.section02.packageandimpot;
 // [import]
 // 외부 클래스를 가지고 와서 배치
 // 이후 현재 클래스에서 사용 시 클래스명만 작성하면 된다!
+import java.lang.*;
 import com.wjdqdwls.section01.method.Calculator;
-
 public class Application2 {
 
 
