@@ -1,9 +1,12 @@
-package com.mycompany.section01.section02.packageandimport;
+package com.mycompany.section02.packageandimport;
 
 // [import]
 // - 외부 클래스를 가지고 와서 배치
 // - 이후 현재 클래스에서 사용 시 클래스명만 작성하면 된다.
 import com.mycompany.section01.method.Calculator;
+
+// 안쓰더라도 컴파일러 시 컴파일러가 자동 추가
+import java.lang.*; // java.lang 패키지 내 모든 클래스 가져오기
 
 public class Application2 {
 

@@ -1,4 +1,4 @@
-package com.mycompany.section01.section02.packageandimport;
+package com.mycompany.section02.packageandimport;
 
 public class Application1 {
   public static void main(String[] args) {
