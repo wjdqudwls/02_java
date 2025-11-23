@@ -1,4 +1,4 @@
-package com.mycompany.level01.basic;
+package com.mycompany.section00.level01.basic;
 
 public class Calculator {
   public void checkMethod(){
