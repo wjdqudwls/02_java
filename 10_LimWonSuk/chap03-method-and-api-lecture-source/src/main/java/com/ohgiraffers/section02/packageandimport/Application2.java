@@ -1,9 +1,12 @@
 package com.ohgiraffers.section02.packageandimport;
 
+// 컴파일 시 컴파일러가 자동 추가
+import java.lang.*; // java.lang 패키지 내 모든 클래스 가져오가
+
 // [import]
 //- 외부 클래스를 가지고 와서 배치
 //- 이후 현재 클래스에서 사용 시 클래스명만 작성하면 된다!!
- import com.ohgiraffers.section01.method.calculator;
+ import com.ohgiraffers.section01.method.Calculator;
 
 public class Application2 {
     
@@ -18,7 +21,7 @@ public class Application2 {
         
         
         // import된 클래스는 패키지명을 생략하고 사용할 수 있다!
-        com.ohgiraffers.section01.method.calculator = new calculator(); // 이제 이거만 써도됨
+        com.ohgiraffers.section01.method.Calculator calculator = new Calculator(); // 이제 이거만 써도됨
         System.out.println("args = " + args);
         
     }

@@ -1,5 +1,8 @@
 package com.google.section2.packageandimport;
 import com.google.section01.method.Calculator;
+
+// 컴파일 시 컴파일러가 자동으로 추가
+import java.lang.*; // java.lang 패키지 내 모든 클래스 가져오기
 public class Application2 {
 
   // [import]
@@ -18,6 +21,7 @@ public class Application2 {
     Calculator calculator = new Calculator();
     System.out.println(calculator.add(55,66));
     System.out.println(calculator.sub(100,20));
+
 
   }
 }
