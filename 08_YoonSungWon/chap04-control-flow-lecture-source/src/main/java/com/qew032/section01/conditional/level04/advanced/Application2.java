@@ -50,17 +50,17 @@ public class Application2 {
         int montsales = sc.nextInt();
         sc.nextLine();
 
-        int bonus = 0;
+        double bonus = 0.0;
 
         if(montsales >= 50000000) {
-            bonus = 5;
+            bonus = 0.05;
         } else if(montsales >= 30000000) {
-            bonus = 3;
+            bonus = 0.03;
         } else if(montsales >= 10000000) {
-            bonus = 1;
+            bonus = 0.01;
         }
 
-        int bonusprice = (montsales / 100) * bonus;
+        int bonusprice = montsales  * (int)bonus;
 
         System.out.println("월 매출액 : " + montsales);
         System.out.println("보너스율 : " + bonus + "%");
