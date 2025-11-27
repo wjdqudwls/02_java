@@ -47,6 +47,10 @@ public class Application {
     System.out.println("member.gender = "+ member.gender);
     System.out.println("member.hobby = "+ Arrays.toString(member.hobby));
 
+    // 선언 따로 초기화 따로 안 됨
+    //int[] arr;
+    // arr = {1,2,3};  -----> 안됨 arr 참조변수 이름만 적혀잇고 정확한 타입 안 적혀 있어서 추론 안 됨.
+    // arr = new int[] {1,2,3} -> 새로운 int 배열 만들고 1,2,3 넣음 명시
 
 
   }
