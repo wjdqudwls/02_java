@@ -1,5 +1,7 @@
 package org.ho.section01.list.dto;
 
+import java.util.Objects;
+
 public class BookDTO implements Comparable<BookDTO> {
 
   /* 도서 정보를 저장할 DTO 클래스를 만들어보자 */
@@ -22,6 +24,13 @@ public class BookDTO implements Comparable<BookDTO> {
     this.price = price;
   }
 
+  /* 객체 복사 생성자 */
+  public BookDTO(BookDTO other){
+    this.number = other.number;
+    this.title= other.title;
+    this.author=other.author;
+    this.price=other.price;
+  }
   /* setter/getter */
   public void setNumber(int number) {
     this.number = number;
@@ -58,11 +67,12 @@ public class BookDTO implements Comparable<BookDTO> {
   /* toString 오버라이딩 */
   @Override
   public String toString() {
-    return "BookDTO [number=" + number
-        + ", title=" + title
-        + ", author=" + author
-        + ", price=" + price + "]";
+    return "[책번호=" + number
+        + ", 제목=" + title
+        + ", 저자=" + author
+        + ", 가격=" + price + "]";
   }
+
 
   /* Comparable<T> 인터페이스
    *  - 같은 인스턴스 끼리의 기본 비교 방법을 정의하는

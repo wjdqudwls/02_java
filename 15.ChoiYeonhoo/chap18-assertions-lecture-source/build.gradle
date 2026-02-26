@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.mycompany'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // JUnit 제공 Assertion에 기능을 추가,보완한 라이브러리
+    // https://mvnrepository.com/artifact/org.assertj/assertj-core
+    testImplementation("org.assertj:assertj-core:3.27.3")
+}
+
+test {
+    useJUnitPlatform()
+}

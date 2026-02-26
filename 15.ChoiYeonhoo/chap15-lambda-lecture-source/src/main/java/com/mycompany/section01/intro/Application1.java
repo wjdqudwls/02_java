@@ -3,7 +3,6 @@ package com.mycompany.section01.intro;
 public class Application1 {
   public static void main(String[] args) {
 
-
     /* 인터페이스에 정의된 추상 메서드를 활용하는 방법 */
 
     /* 1. 인터페이스를 상속받은 클래스를 이용해서 추상 메서드를 오버라이딩 */
@@ -27,9 +26,7 @@ public class Application1 {
     
     /* 3. 익명 내부 클래스 방식을 람다식으로 바꿔서 사용하는 방법 */
     
-    Calculator c3 = 
-      
-      (int a, int b) ->  {return a + b;};
+    Calculator c3 = (int a, int b) ->  {return a + b;};
 
    
 //    Calculator c3 = new Calculator() {  // 어짜피 new Calculator로 생성할거니까 삭제

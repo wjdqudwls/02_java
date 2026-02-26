@@ -235,6 +235,7 @@ public class Application3 {
       System.out.println(book);
     }
 
+    updateBook();
 
   }
 

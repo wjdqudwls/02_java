@@ -1,6 +1,9 @@
 package com.my.book.dto;
 
-public class BookDTO implements Comparable<BookDTO>{
+import java.io.Serializable;
+
+public class BookDTO implements Comparable<BookDTO>, Serializable {
+  private static final long serialVersionUID = 1L;
 
   /* 도서 정보를 저장할 DTO 클래스를 만들어보자 */
   private int number;

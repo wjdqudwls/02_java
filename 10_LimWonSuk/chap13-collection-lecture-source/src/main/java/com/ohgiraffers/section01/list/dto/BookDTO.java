@@ -7,6 +7,17 @@ public class BookDTO implements Comparable<BookDTO> {
     private String author;
     private int price;
 
+    /*객체 복사 생성자 */
+    public BookDTO(BookDTO other){
+        this.title = other.title;
+        this.price = other.price;
+        this.number = other.number;
+        this.author = other.author;
+
+
+    }
+
+
     public BookDTO(){}
 
     public int getNumber() {

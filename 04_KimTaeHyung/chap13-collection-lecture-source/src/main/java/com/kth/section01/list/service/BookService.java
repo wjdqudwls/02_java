@@ -61,7 +61,7 @@ public class BookService {
     }
 
     // 다음 번호 생성
-    int nextNumber = bookList.get(bookList.size()-1).getNumber() + 1;
+    int nextNumber = bookList.isEmpty() ? 1 : bookList.get(bookList.size()-1).getNumber() + 1;
 
     // 책 정보를 목록에 추가
     newBook.setNumber(nextNumber);

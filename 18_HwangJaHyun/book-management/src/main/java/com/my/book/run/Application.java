@@ -37,7 +37,7 @@ public class Application {
           case 1: selectAll(); break;
           case 2: selectBookNumber(); break;
           case 3: addBook(); break;
-          case 4: updatebook(); break;
+          case 4: updateBook(); break;
           case 5: deleteBook(); break;
           case 6: searchBook(); break;
           case 7: sortBookList(); break;
@@ -130,7 +130,7 @@ public class Application {
    * 얕은 복사를 이용한 원본 수정
    *
    */
-  private void updatebook(){
+  private void updateBook(){
     System.out.print("\n*** 도서 수정 ***\n");
 
     // 1. 책 번호로 수정할 책이 있는 지 검색
@@ -151,16 +151,18 @@ public class Application {
     System.out.print("수정할 책 제목 : ");
     String updateTitle =  sc.nextLine();
 
-    System.out.println("수정할 책 저자 : ");
+    System.out.print("수정할 책 저자 : ");
     String updateAuthor = sc.nextLine();
 
-    System.out.println("수정할 책 가격 : ");
+    System.out.print("수정할 책 가격 : ");
     int updatePrice = sc.nextInt();
     sc.nextLine();
 
     book.setTitle(updateTitle);
     book.setAuthor(updateAuthor);
     book.setPrice(updatePrice);
+
+    bookService.updateBook();
 
     System.out.println("*** 책 정보가 수정되었습니다.");
   }
